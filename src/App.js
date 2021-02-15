@@ -1,6 +1,5 @@
-import logo from './logo.svg';
+import react from 'react';
 import './App.css';
-// import { Header } from './Components/Header';
 import { Header } from './Components/Header';
 import { Balance } from './Components/Balance';
 import { AccountSummary } from './Components/AccountSummary';
