@@ -13,9 +13,9 @@ export const AddTransaction = () => {
         const newTransaction = {
             id: new Date().getTime(),
             description,
-            transactionAmount:  transactionAmount
+            transactionAmount: transactionAmount
         }
-
+        // console.log(newTransaction);
         addTransaction(newTransaction);
 
     }

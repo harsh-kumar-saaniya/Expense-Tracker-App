@@ -12,7 +12,9 @@ function App() {
     <GlobalProvider >
       <Header />
       <div className="container">
-        <Balance />
+        <div className='container__balance'>
+          <Balance />
+        </div>
         <AccountSummary />
         <TransactionHistory />
         <AddTransaction />
