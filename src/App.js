@@ -13,9 +13,6 @@ function App() {
     <TransactionProvider >
       <Header />
       <div className="container">
-        <div className='container__balance'>
-          <Balance />
-        </div>
         <AccountSummary />
         <TransactionHistory />
         <AddTransaction />

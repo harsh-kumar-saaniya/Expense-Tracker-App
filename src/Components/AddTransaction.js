@@ -8,12 +8,18 @@ export const AddTransaction = () => {
 
     const handleAddition = (e) => {
         e.preventDefault();
-        console.log(newDesc, newAmount)
+        if (Number(newAmount) === 0) {
+            alert("Please Enter Correct Value")
+            return false;
+        }
         addTransaction({
-            amount: newAmount,
-            desc: newDesc
+            amount: Number(newAmount),
+            desc: newDesc,
         })
+        setAmount(0)
+        setDesc('');
     }
+
 
     return (
         <div>
