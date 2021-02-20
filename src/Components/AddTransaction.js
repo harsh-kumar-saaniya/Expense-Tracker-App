@@ -7,17 +7,20 @@ export const AddTransaction = () => {
     const [newAmount, setAmount] = useState(0)
 
     const handleAddition = (e) => {
+        const randomId = Math.floor(Math.random() * 1546546546 + 549879855698);
         e.preventDefault();
         if (Number(newAmount) === 0) {
             alert("Please Enter Correct Value")
             return false;
         }
         addTransaction({
+            id: randomId,
             amount: Number(newAmount),
             desc: newDesc,
         })
         setAmount(0)
         setDesc('');
+                       
     }
 
 
