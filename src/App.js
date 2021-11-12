@@ -1,22 +1,22 @@
-import react from 'react';
 import './App.css';
-import { Header } from './Components/Header';
-import { Balance } from './Components/Balance';
-import { AccountSummary } from './Components/AccountSummary';
-import { TransactionHistory } from './Components/TransactionHistory';
-import { AddTransaction } from './Components/AddTransaction';
-import { TransactionProvider } from './Context/transContext'
+import Header from './Components/Header';
+import Balance from './Components/Balance';
+import AccountsSummary from './Components/AccountsSummary';
+import TransactionHistory from './Components/TransactionHistory';
+import AddTransactions from './Components/AddTransactions';
+import { GlobalProvider } from './Context/GlobalState';
 
 function App() {
   return (
-    <TransactionProvider >
+    <GlobalProvider>
       <Header />
       <div className="container">
-        <AccountSummary />
+        <Balance />
+        <AccountsSummary />
         <TransactionHistory />
-        <AddTransaction />
+        <AddTransactions />
       </div>
-    </TransactionProvider >
+    </GlobalProvider>
   );
 }
 
